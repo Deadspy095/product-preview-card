@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+body{
+    background-color:hsl(30, 38%, 92%) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    min-height: 100vh;
+
+}
+.container{
+    display: flex;
+    flex-direction: column; 
+    background-color: white;
+    border-radius: 10px;
+    max-width: 340px;
+    width: auto;
+    overflow: hidden;
+
+}
+.image img{
+    width: 100%;
+    display: block;
+}
+.context{
+    padding: 20px;
+
+}
+.category{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+.title{
+    margin: 10px 0;
+    font-size: 35px;
+}
+.content{
+    color: hsl(228, 12%, 48%);
+    font-size: 18px;
+    line-height: 1.5;
+}
+.price{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.newprice{
+    font-size: 35px;
+    color: hsl(158, 36%, 37%);
+}
+.oldprice{
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+.addtocart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    padding: 15px 99px ;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.addtocart:hover{
+    background-color:hsl(158, 42%, 18%) ;
+}
+cart-icon{
+    width: 20px;
+    height: 20px;
+}
+@media screen and (min-width:600px){
+    |body{
+        background-color:hsl(30, 38%, 92%) ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        min-height: 100vh;
+    
+    }
+    .container{
+        max-width: 600px;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+    .image{
+        flex: 1;
+    }
+    .image img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+    .context{
+        flex: 1;
+        padding: 30px;
+    }
+    .title{
+        font-size: 28px;
+    }
+    .content{
+        font-size: 16px;
+    }
+    .newprice{
+        font-size: 30px;
+    }
+    .addtocart{
+        padding: 15px 40px ;
+    }
+}
